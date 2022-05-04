@@ -85,7 +85,7 @@ h1 {
 }
 
 .answer {
-  padding-top: .7rem;
+  display: none;
 }
 
 p {
@@ -94,15 +94,28 @@ p {
   color: hsl(240, 6%, 50%);
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
-p:hover {
+/* p:hover {
   color: hsl(14, 88%, 65%);
-}
+} */
 
 .image-wrapper img:hover {
   top: 12.5rem;
   transition-duration: .3s;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.active > .answer {
+  display: block;
+  padding-top: .7rem;
 }
